@@ -32,6 +32,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
+    # Activar las apps que se vayan creando
+    'mantenimientos',
 ]
 
 MIDDLEWARE = [
@@ -83,7 +85,7 @@ DATABASES = {
         'USER'     : env.str('DB_USER'),
         'PASSWORD' : env.str('DB_PASSWORD'),
         'HOST'     : env.str('DB_HOST'),
-        'PORT'     : env.str('DB_PORT'),
+        'PORT'     : env.int('DB_PORT'),
     }
 }
 
