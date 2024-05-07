@@ -1,0 +1,9 @@
+.venv/
+.venv2/
+.App1/
+.env
+
+venv/
+venv2/
+App1/
+.env
