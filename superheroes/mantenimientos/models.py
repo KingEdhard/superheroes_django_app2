@@ -8,7 +8,7 @@ class Personaje(models.Model):
     # Configurar los atributos del modelo
     id = models.AutoField(primary_key=True, editable=False)
     
-    name = models.CharField(max_length=50, validators=[MinLengthValidator(1), MaxLengthValidator(50)])
+    name = models.CharField(max_length=50, validators=[MinLengthValidator(1), MaxLengthValidator(50)], unique=True)
     
     description = models.TextField(validators=[MinLengthValidator(1)])
     
